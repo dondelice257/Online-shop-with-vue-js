@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop with vue js</title>
+    <link rel="stylesheet" href="style.css" >
+
+</head>
+<body>
+<div id="app">
+        <div class="item" id="item1">
+            <h1>Car</h1>
+            <span>Prix unitaire : $ 250</span>
+            <input type="number" @input="al" v-model.number="commands.car" name="" id="">
+            <button id="add1">Add to cart</button>
+        </div>
+        <div class="item" id="item2">
+            <h1>Moto</h1>
+            <span>Prix unitaire : $ 200</span>
+            <input type="number" v-model="commands.moto" name="" id="">
+            <button id="add2">Add to cart</button>
+        </div>
+        <div class="item" id="item3">
+            <h1>Bicycle</h1>
+            <span>Prix unitaire : $ 150</span>
+            <input type="number" v-model="commands.bicycle" name="" id="">
+            <button id="add3" @click="addThere">Add to cart</button>
+        </div>
+        <button id="showCart" @click="showIt">Cart</button>
+        <cart v-if="showMe" :commands="commands" :price="price"/>
+       
+
+    </div>
+   <script src="script.js"></script>
+   <script src="https://unpkg.com/vue@next"></script>
+  </body>
+</html>
