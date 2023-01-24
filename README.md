@@ -1,2 +1,2 @@
 # Online-shop-with-vue-js
-This is my first project with 
+This is my first project with Vue js 
