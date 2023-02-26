@@ -7,7 +7,7 @@
 
                     commands : {
                     car : 0,
-                    moto : ,
+                    moto :0,
                     bicycle : 0,
                 },
                 price :{
